@@ -1,9 +1,5 @@
 @echo off
-
-REM Automatically installs dependencies and runs the chatbot
-
-echo Installing dependencies...
-npm install
-
-echo Starting the chatbot...
-npm start
+cd /d "%~dp0"
+python -m pip install -r requirements.txt
+python src/chatbot.py
+pause
